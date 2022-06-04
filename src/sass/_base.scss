@@ -1,0 +1,52 @@
+$color--white: hsl(0, 0%, 100%);
+$color--black: hsl(0, 0%, 0%);
+$color--dark--gray: hsl(0, 0%, 55%);
+$color--very--dark--gray: hsl(0, 0%, 41%);
+$color--orange: #f79a30;
+
+@mixin flex($flex-direction, $align-items, $justify-content, $gap) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
+}
+
+@mixin grid($grid-template-columns, $align-items, $justify-items, $gap) {
+  display: grid;
+  grid-template-columns: $grid-template-columns;
+  align-items: $align-items;
+  justify-items: $justify-items;
+  gap: $gap;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+// .hidden {
+//   opacity: 1;
+//   visibility: visible;
+// }
+
+.btnHidden {
+  display: none !important;
+}
